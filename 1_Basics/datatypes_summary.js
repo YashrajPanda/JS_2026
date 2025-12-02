@@ -29,6 +29,29 @@ const myFunction = function(){
     console.log("Hello js")
 }
 
-console.log(typeof myFunction)
+// console.log(typeof myFunction)
 
 // Study Link : https://262.ecma-international.org/#sec-typeof-operator
+
+
+// Meemory Allocation
+
+// Stack(Primitive ), Heap (Non-Primitive)
+let myName = "Yash"
+let anotherName = myName
+
+anotherName = "Jatin"
+
+console.log(myName)  // Yash
+console.log(anotherName) // Jatin
+
+let userOne ={
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "yash@google.com"
+console.log(userOne.email)  
+console.log(userTwo.email)  
